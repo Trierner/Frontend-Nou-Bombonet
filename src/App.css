@@ -1,0 +1,77 @@
+.App {
+  background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.sidebar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: rgb(138, 75, 23);
+  width: 240px;
+  padding: 30px 5px;
+  text-align: center;
+  font-family: 'Poppins' sans-serif;
+}
+
+.sidebar-menu {
+  top: 0;
+  left: 0;
+  width: 250px;
+  max-height: calc(100vh - 32px);
+  margin: 0;
+  background-color: white;
+  overflow-y: auto;
+  white-space: nowrap;
+  font-family: 'Poppins' sans-serif;
+}
+
+.sidebar-menu ul{
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li div {
+  color: rgb(138, 75, 23);
+  padding: 10px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.sidebar-menu li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.sidebar-menu li a {
+  display: block;
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+  background-color: rgb(233, 231, 231);
+  color: black;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
